@@ -5,6 +5,31 @@
 <title>Insert title here</title>
 </head>
 <body>
-
+	<h1>자바스크립트</h1>
 </body>
+
+<script type="text/javascript">
+
+	//이름있는함수(기명, 선언적함수) --> 정의 부분이 해석된다
+	//정의
+	function testA() {
+		console.log("testA() 함수실행");
+	}
+	
+	//실행
+	testA();  //정의부분이 아래에 있어도 실행됨
+	
+	//////////////////////////////////////////////////////////
+	
+	//이름없는함수(익명) --> 실제로 이름이 없으면 사용할 수 없다 --> 변수에 할당
+	
+	var testB = function(){
+		console.log("익명함수실행");
+	}
+	
+	//실행(변수이름)
+	testB();
+
+	
+</script>
 </html>
