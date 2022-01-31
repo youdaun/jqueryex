@@ -6,15 +6,25 @@
 </head>
 <body>
 	<div>
-		<button type="button">js 테스트</button>
-		<h1>이름출력영역</h1>
+		<button id="btn" type="button">js 테스트</button>
+		<h1 id="display">이름출력영역</h1>
 
 	</div>
 </body>
 	
 	<script type="text/javascript">
 	
-		window.onload = function(){};
+		window.onload = function(){
+			
+			/* html --> 자바스크립트객체화 */
+			var testButton = document.getElementById("btn");
+			var testArea = document.getElementById("display");
+			
+			testButton.onclick = function(){
+				console.log("버튼클릭");
+				testArea.innerHTML = '<font color="red">홍길동</font>'
+			} ;
+		};
 	
 	</script>
 	
